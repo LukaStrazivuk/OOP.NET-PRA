@@ -1,0 +1,61 @@
+﻿<Window x:Class="Projekt_WPF.Vise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_WPF"
+        mc:Ignorable="d"
+        Title="Vise" Height="600" Width="400">
+    <Grid Background="LightGreen">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard>
+                    <Storyboard Duration="00:00:05" Storyboard.TargetProperty="Opacity">
+                        <DoubleAnimation From="0" To="1"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Label x:Name="lbName" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="nazivDrzave" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbKod" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="kodDrzave" Grid.Column="1" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbOdigrani" Grid.Row="2" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="odigraniDrzave" Grid.Column="1" Grid.Row="2" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbPobijede" Grid.Row="3" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="pobijedeDrzave" Grid.Column="1" Grid.Row="3" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbGubici" Grid.Row="4" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="gubiciDrzave" Grid.Column="1" Grid.Row="4" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbNeodluceni" Grid.Row="5" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="neodluceniDrzave" Grid.Column="1" Grid.Row="5" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbZabijeni" Grid.Row="6" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="zabijeniDrzave" Grid.Column="1" Grid.Row="6" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbPrimljeni" Grid.Row="7" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="primljeniDrzave" Grid.Column="1" Grid.Row="7" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label x:Name="lbRazlika" Grid.Row="8" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="razlikaDrzave" Grid.Column="1" Grid.Row="8" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
